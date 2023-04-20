@@ -1,0 +1,2347 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="front_web/home/img/imo-fav.webp">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="front_web/home/css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.3/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.3/assets/owl.theme.default.css" />
+    <title>Home | Imo Jobs</title>
+</head>
+<body>
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="front_web/home/img/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav justify-content-between">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About Us</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Our Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Our Services</a>
+                            <a class="dropdown-item" href="#">2 Service</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Sub Service</a>
+                        </div>
+                    </li> -->
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="company-lists.html">Companies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="candidate-register.html">Work with us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="posts.html">Blog</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex align-item-center justify-content-between">
+                    <div class="dropdown mx-1 ml-md-2">
+                        <button class="btn btn-outline-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sign in
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="users/employee-login.html">Employer</a>
+                            <a class="dropdown-item" href="users/candidate-login.html">Candidate</a>
+                        </div>
+                    </div>
+                    <div class="dropdown mx-1 mr-md-2">
+                        <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Register
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="employer-register.html">Employer</a>
+                            <a class="dropdown-item" href="candidate-register.html">Candidate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+<div class="w-100 jumbotron position-relative">
+    <div class="col-lg-8 height-inherit d-flex flex-column justify-content-center">
+        <div class="display-4 mt-2 font-weight-bold text-white mt-md-45">
+            <div class="mb-2 position-relative w-75">
+            <!-- <div class="pl-3 mb-2 position-relative w-75"> -->
+            <!-- <div class="bg-custom  pl-3 mb-2 position-relative w-75"> -->
+                <!-- <div class="bg-custom-overlay position-absolute"></div> -->
+                <div class="position-relative text-capitalized clr-yellow">Imo Jobs</div>
+            </div>
+            <p class="h1 text-white">
+                From Imo State to The World
+            <hr class="m-0 p-0 w-25 bg-white mb-4">
+            </p>
+        </div>
+        <div class="lead w-75 text-light font-poppins">
+            We connect the best talents in Imo State with reputable employers in Imo State and around the world
+        </div>
+        <div class="jumbo-form bg-white rounded p-1 my-3 ">
+            <form action="https://imojobs.com.ng/search-jobs" id='searchForm' method="get">
+                <div class="inner-form d-flex justify-content-between">
+                    <div class="left d-flex">
+                        <div class="input-wrap first">
+                            <div class="input-field first">
+                                <input type="text" placeholder="&#xf002    What job are you looking for?" name="keywords" id="search-keywords" autocomplete="off" />
+                            </div>
+                        </div>
+                        <div class="input-wrap second">
+                            <div class="input-field second">
+                                <div class="input-select">
+                                    <select data-trigger="" name="choices-single-defaul">
+                                        <option placeholder="">Location</option>
+                                        <option value="Aboh Mbaise">Aboh Mbaise</option>
+                                        <option value="Ahiazu Mbaise">Ahiazu Mbaise</option>
+                                        <option value="Ehime Mbano">Ehime Mbano</option>
+                                        <option value="Ezinihitte">Ezinihitte</option>
+                                        <option value="Ideato North">Ideato North</option>
+                                        <option value="Ideato South">Ideato South</option>
+                                        <option value="Ihitte/Uboma">Ihitte/Uboma</option>
+                                        <option value="Ikeduru">Ikeduru</option>
+                                        <option value="Isiala Mbano">Isiala Mbano</option>
+                                        <option value="Isu">Isu</option>
+                                        <option value="Mbaitoli">Mbaitoli</option>
+                                        <option value="Ngor Okpala">Ngor Okpala</option>
+                                        <option value="Njaba">Njaba</option>
+                                        <option value="Nkwerre">Nkwerre</option>
+                                        <option value="Nwangele">Nwangele</option>
+                                        <option value="Obowo">Obowo</option>
+                                        <option value="Oguta">Oguta</option>
+                                        <option value="Ohaji/Egbema">Ohaji/Egbema</option>
+                                        <option value="Okigwe">Okigwe</option>
+                                        <option value="Onuimo">Onuimo</option>
+                                        <option value="Orlu">Orlu</option>
+                                        <option value="Orsu">Orsu</option>
+                                        <option value="Oru East">Oru East</option>
+                                        <option value="Oru West">Oru West</option>
+                                        <option value="Owerri Municipal">Owerri Municipal</option>
+                                        <option value="Owerri North">Owerri North</option>
+                                        <option value="Owerri West">Owerri West</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-wrapper d-flex align-items-center">
+                        <button class="btn-search btn-success mr-2" type="submit">SEARCH</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="spacer py-5"></div>
+        <!-- <div class="spacer py-5"></div> -->
+    </div>
+    <div class="row position-absolute jumbo-sec-2" data-aos="zoom-in">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            <div class="show-c-box py-3">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 d-flex justify-content-between align-items-center">
+                        <div class="f"></div>
+                        <div class="px-3 py-2 text-center">
+                            <div class="d-flex align-items-start justify-content-center flex-row">
+                                <div class="font-20 font-weight-bold font-Mulish text-white">
+                                4
+                                </div>
+                                                                
+                            </div>
+                            <div class="h2 font-weight-light text-white">Jobs</div>
+                        </div>
+                        <div class="border-custom"></div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 d-flex justify-content-between align-items-center">
+                        <div class="f"></div>
+                        <div class="px-3 py-2 text-center">
+                            <div class="d-flex align-items-start flex-row justify-content-center">
+                                <div class="font-20 font-weight-bold font-Mulish text-center text-white">
+                                2
+                                </div>
+                                                            </div>
+                            <div class="h4 font-weight-light text-white">Candidates</div>
+                        </div>
+                        <div class="border-custom"></div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 d-flex justify-content-between align-items-center">
+                        <div class="f"></div>
+                        <div class="px-3 py-2 text-center">
+                            <div class="d-flex align-items-start flex-row justify-content-center">
+                                <div class="font-20 font-weight-bold font-Mulish text-center  text-white">
+                                    7
+                                </div>
+                                                            </div>
+                            <div class="h4 font-weight-light text-white">Companies</div>
+                        </div>
+                        <div class="border-custom"></div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 d-flex justify-content-between align-items-center">
+                        <div class="f"></div>
+                        <div class="px-3 py-2 text-center">
+                            <div class="d-flex align-items-start flex-row justify-content-center">
+                                <div class="font-20 font-weight-bold font-Mulish text-center text-white">
+                                    <!-- 0  -->
+                                    0
+                                </div>
+                                                            </div>
+                            <div class="h4 font-weight-light text-white">Employed</div>
+                        </div>
+                        <div class="border-custom-none"></div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+</div>
+<div class="section-2 " data-aos="zoom-in">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-md-3">
+                <img src="front_web/home/img/section-2-bg.png" alt="" class="sec-2-bg-img">
+            </div>
+            <div class="col-lg-8 pl-lg-5 mt-md-3">
+                <div class="display-4 custom-heading color-dark font-weight-bold mb-4">
+                    How We <span class="clr-green font-archivo">Maintain a High Standard </span> of Trust and Excellence
+                </div>
+                <div class="mt-2">
+                    <div class="row align-items-center mt-2">
+                        <div class="col-1 pr-lg-0"><span class="material-symbols-outlined clr-green">add</span></div>
+                        <div class="col-11 pl-lg-0">On Imo Jobs, everyone is vetted, both employers and jobseekers to ensure they meet our standards</div>
+                    </div>
+                    <div class="row align-items-center mt-2">
+                        <div class="col-1 pr-lg-0"><span class="material-symbols-outlined clr-green">add</span></div>
+                        <div class="col-11 pl-lg-0">We dig very dip to avail the best opportunities for both employers and jobseeker to achieve their positive aspirations</div>
+                    </div>
+                    <div class="row align-items-center my-2">
+                        <div class="col-1 pr-lg-0"><span class="material-symbols-outlined clr-green">add</span></div>
+                        <div class="col-11 pl-lg-0">We provide expert services to employers to help them get the best hands to work with</div>
+                    </div>
+                    <div class="row align-items-center mt-2">
+                        <div class="col-1 pr-lg-0"><span class="material-symbols-outlined clr-green">add</span></div>
+                        <div class="col-11 pl-lg-0">We provide the training and support to jobseekers to get your dream job</div>
+                    </div>
+                    <div class="row align-items-center mb-2">
+                        <div class="col-1 pr-lg-0"><span class="material-symbols-outlined clr-green">add</span></div>
+                        <div class="col-11 pl-lg-0">Endorsed and launched by the Government of Imo State.</div>
+                    </div>
+                    <div class="btn text-underline font-weight-bold">
+                        <a href="route(%27front.about.html" style="color:#000">Learn More About Us</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="section-3" data-aos="zoom-in-up">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7">
+                <div class="h1 m-2">Featured Jobs</div>
+                <div class="font-weight-light">Our current top picks for your dream career based on our current popular listing.
+                </div>
+            </div>
+            <div class="col-lg-5 d-flex align-items-center font-weight-bold justify-content-between">
+                <div id="feat-btn1" class="bg-green-ex-light px-3 py-2 clr-green rounded cus-btn">01</div>
+                <div id="feat-btn2" class="sec-btn rounded cus-btn">02</div>
+                <div id="feat-btn3" class="sec-btn rounded cus-btn">03</div>
+                <div id="feat-btn4" class="sec-btn rounded cus-btn">04</div>
+                <div id="feat-btn5" class="sec-btn rounded cus-btn">05</div>
+            </div>
+        </div>
+        <div id="feat1" class="row mt-5">
+            <div class="col-lg-6 ">
+                <div class="box-wrap p-3 px-3 border-sec-3 ">
+                        <div class="row align-items-center">
+                            <div class="col-md-8 clr-dark-blue">
+                                <div class="row align-items-center">
+                                    <div class="col-5">
+                                        <img src="uploads/profile-pictures/10/aaa.jpg" width="80px" alt="">
+                                    </div>
+                                    <div class="col-7 p-lg-0">
+                                        <h6 class="text-black font-weight-bold">
+                                            ByteBuilders Inc.
+                                        </h6>
+                                        <div class="text-muted small">
+                                            17th Apr, 2023
+                                        </div>
+                                        <div class="d-flex align-items-center small my-2">
+                                            <span class="material-symbols-outlined">pin_drop</span>
+                                            <div class="text-dark">
+                                                Ngor Okpala, Imo, Nigeria
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center small my-1">
+                                            <span class="mx-2">₦</span>
+                                            <div class="text-dark">450,000 - 650,000</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="h2 font-weight-bold my-3">Senior UI/UX Designer</div>
+                                <div class="btn clr-green bg-green-ex-light rounded font-weight-bold px-5 py-2">
+                                    Full Time
+                                </div>
+                                <div class="lead my-3 font-15">
+                                    <p>We are seeking a talented and experienced Senior UI/UX Designer to join our team. The ideal candi...
+                                </div>
+                            </div>
+                            <div class="col-md-4 p-2 text-center">
+                                <div class="wrap-des py-3 rounded p-0" style="border: solid 1px #c0e8ca;">
+                                    <div class="h4 font-weight-bold clr-dark-blue mb-5 mt-4">Job Closed in</div>
+                                    <div class="display-1 clr-green mt-4 font-weight-bold font-Josefin">
+                                        21
+                                    </div>
+                                    <div class="h2 font-weight-light text-muted pre">D  A  Y  S</div>
+                                    <div class="btn font-15 mt-2 text-white font-Kulim-Park py-1 px-4 bg-green">
+
+                                        <a class="text-white" href="job-details/zqP7G0vnzy6R.html">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-lg-6  mt-5 ">
+                <div class="box-wrap p-3 px-3 border-sec-3  mt-5 ">
+                        <div class="row align-items-center">
+                            <div class="col-md-8 clr-dark-blue">
+                                <div class="row align-items-center">
+                                    <div class="col-5">
+                                        <img src="uploads/profile-pictures/7/a.jpg" width="80px" alt="">
+                                    </div>
+                                    <div class="col-7 p-lg-0">
+                                        <h6 class="text-black font-weight-bold">
+                                            AppHive Innovations
+                                        </h6>
+                                        <div class="text-muted small">
+                                            17th Apr, 2023
+                                        </div>
+                                        <div class="d-flex align-items-center small my-2">
+                                            <span class="material-symbols-outlined">pin_drop</span>
+                                            <div class="text-dark">
+                                                Owerri West, Imo, Nigeria
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center small my-1">
+                                            <span class="mx-2">₦</span>
+                                            <div class="text-dark">200,000 - 300,000</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="h2 font-weight-bold my-3">UI UX Designer</div>
+                                <div class="btn clr-green bg-green-ex-light rounded font-weight-bold px-5 py-2">
+                                    Contract
+                                </div>
+                                <div class="lead my-3 font-15">
+                                    <p>We are looking for a talented UI/UX Designer to join our team. As a UI/UX Designer, you will be r...
+                                </div>
+                            </div>
+                            <div class="col-md-4 p-2 text-center">
+                                <div class="wrap-des py-3 rounded p-0" style="border: solid 1px #c0e8ca;">
+                                    <div class="h4 font-weight-bold clr-dark-blue mb-5 mt-4">Job Closed in</div>
+                                    <div class="display-1 clr-green mt-4 font-weight-bold font-Josefin">
+                                        15
+                                    </div>
+                                    <div class="h2 font-weight-light text-muted pre">D  A  Y  S</div>
+                                    <div class="btn font-15 mt-2 text-white font-Kulim-Park py-1 px-4 bg-green">
+
+                                        <a class="text-white" href="job-details/kLqqFxyZdALA.html">Details</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div id="feat2" class="row mt-5">
+            <div class="col-lg-6 ">
+                <div class="box-wrap p-3 px-3 border-sec-3 ">
+                        <div class="row align-items-center">
+                            <div class="col-md-8 clr-dark-blue">
+                                <div class="row align-items-center">
+                                    <div class="col-5">
+                                        <img src="https://masterbundles.com/wp-content/uploads/2022/10/rhino-logo-design-323-490x490.jpg" width="80px" alt="">
+                                    </div>
+                                    <div class="col-7 p-lg-0">
+                                        <h6 class="text-black font-weight-bold">
+                                            Jober Clock Biz
+                                        </h6>
+                                        <div class="text-muted small">
+                                            19th Dec, 2023
+                                        </div>
+                                        <div class="d-flex align-items-center small my-2">
+                                            <span class="material-symbols-outlined">pin_drop</span>
+                                            <div class="text-dark">
+                                                Ngor Okpala, Imo, Nigeria
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center small my-1">
+                                            <span class="mx-2">₦</span>
+                                            <div class="text-dark">450,000 - 650,000</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="h2 font-weight-bold my-3">Python Developer</div>
+                                <div class="btn clr-green bg-green-ex-light rounded font-weight-bold px-5 py-2">
+                                    Part Time
+                                </div>
+                                <div class="lead my-3 font-15">
+                                    <p>We are seeking a talented and experienced Senior UI/UX Designer to join our team. The ideal candi...
+                                </div>
+                            </div>
+                            <div class="col-md-4 p-2 text-center">
+                                <div class="wrap-des py-3 rounded p-0" style="border: solid 1px #c0e8ca;">
+                                    <div class="h4 font-weight-bold clr-dark-blue mb-5 mt-4">Job Closed in</div>
+                                    <div class="display-1 clr-green mt-4 font-weight-bold font-Josefin">
+                                        67
+                                    </div>
+                                    <div class="h2 font-weight-light text-muted pre">D  A  Y  S</div>
+                                    <div class="btn font-15 mt-2 text-white font-Kulim-Park py-1 px-4 bg-green">
+
+                                        <a class="text-white" href="job-details/zqP7G0vnzy6R.html">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-lg-6  mt-5 ">
+                <div class="box-wrap p-3 px-3 border-sec-3  mt-5 ">
+                        <div class="row align-items-center">
+                            <div class="col-md-8 clr-dark-blue">
+                                <div class="row align-items-center">
+                                    <div class="col-5">
+                                        <img src="https://www.freepnglogos.com/uploads/company-logo-png/company-logo-transparent-png-19.png" width="80px" alt="">
+                                    </div>
+                                    <div class="col-7 p-lg-0">
+                                        <h6 class="text-black font-weight-bold">
+                                            Ceptic Apptech
+                                        </h6>
+                                        <div class="text-muted small">
+                                            17th Apr, 2023
+                                        </div>
+                                        <div class="d-flex align-items-center small my-2">
+                                            <span class="material-symbols-outlined">pin_drop</span>
+                                            <div class="text-dark">
+                                                Owerri West, Imo, Nigeria
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center small my-1">
+                                            <span class="mx-2">₦</span>
+                                            <div class="text-dark">200,000 - 300,000</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="h2 font-weight-bold my-3">SQL Developer</div>
+                                <div class="btn clr-green bg-green-ex-light rounded font-weight-bold px-5 py-2">
+                                    Contract
+                                </div>
+                                <div class="lead my-3 font-15">
+                                    <p>We are looking for a talented UI/UX Designer to join our team. As a UI/UX Designer, you will be r...
+                                </div>
+                            </div>
+                            <div class="col-md-4 p-2 text-center">
+                                <div class="wrap-des py-3 rounded p-0" style="border: solid 1px #c0e8ca;">
+                                    <div class="h4 font-weight-bold clr-dark-blue mb-5 mt-4">Job Closed in</div>
+                                    <div class="display-1 clr-green mt-4 font-weight-bold font-Josefin">
+                                        45
+                                    </div>
+                                    <div class="h2 font-weight-light text-muted pre">D  A  Y  S</div>
+                                    <div class="btn font-15 mt-2 text-white font-Kulim-Park py-1 px-4 bg-green">
+
+                                        <a class="text-white" href="job-details/kLqqFxyZdALA.html">Details</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div id="feat3" class="row mt-5">
+            <div class="col-lg-6 ">
+                <div class="box-wrap p-3 px-3 border-sec-3 ">
+                        <div class="row align-items-center">
+                            <div class="col-md-8 clr-dark-blue">
+                                <div class="row align-items-center">
+                                    <div class="col-5">
+                                        <img src="https://www.freeiconspng.com/thumbs/msn-icon/msn-icon-0.png" width="80px" alt="">
+                                    </div>
+                                    <div class="col-7 p-lg-0">
+                                        <h6 class="text-black font-weight-bold">
+                                            Buter Tech LLC
+                                        </h6>
+                                        <div class="text-muted small">
+                                            19th Dec, 2023
+                                        </div>
+                                        <div class="d-flex align-items-center small my-2">
+                                            <span class="material-symbols-outlined">pin_drop</span>
+                                            <div class="text-dark">
+                                                Ngor Okpala, Imo, Nigeria
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center small my-1">
+                                            <span class="mx-2">₦</span>
+                                            <div class="text-dark">450,000 - 650,000</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="h2 font-weight-bold my-3">GO Lan Developer</div>
+                                <div class="btn clr-green bg-green-ex-light rounded font-weight-bold px-5 py-2">
+                                    Part Time
+                                </div>
+                                <div class="lead my-3 font-15">
+                                    <p>We are seeking a talented and experienced Senior UI/UX Designer to join our team. The ideal candi...
+                                </div>
+                            </div>
+                            <div class="col-md-4 p-2 text-center">
+                                <div class="wrap-des py-3 rounded p-0" style="border: solid 1px #c0e8ca;">
+                                    <div class="h4 font-weight-bold clr-dark-blue mb-5 mt-4">Job Closed in</div>
+                                    <div class="display-1 clr-green mt-4 font-weight-bold font-Josefin">
+                                        4
+                                    </div>
+                                    <div class="h2 font-weight-light text-muted pre">D  A  Y  S</div>
+                                    <div class="btn font-15 mt-2 text-white font-Kulim-Park py-1 px-4 bg-green">
+
+                                        <a class="text-white" href="job-details/zqP7G0vnzy6R.html">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-lg-6  mt-5 ">
+                <div class="box-wrap p-3 px-3 border-sec-3  mt-5 ">
+                        <div class="row align-items-center">
+                            <div class="col-md-8 clr-dark-blue">
+                                <div class="row align-items-center">
+                                    <div class="col-5">
+                                        <img src="https://www.aabhishek.com/wp-content/uploads/2020/01/Visa-Company-Logo-Oci-Visa-Center-Logo-Logo-Design-company-USA-London-India-Dubai.jpg" width="80px" alt="">
+                                    </div>
+                                    <div class="col-7 p-lg-0">
+                                        <h6 class="text-black font-weight-bold">
+                                            Scoll Land INC
+                                        </h6>
+                                        <div class="text-muted small">
+                                            24th Apr, 2023
+                                        </div>
+                                        <div class="d-flex align-items-center small my-2">
+                                            <span class="material-symbols-outlined">pin_drop</span>
+                                            <div class="text-dark">
+                                                Owerri West, Imo, Nigeria
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center small my-1">
+                                            <span class="mx-2">₦</span>
+                                            <div class="text-dark">200,000 - 300,000</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="h2 font-weight-bold my-3">Android App Developer</div>
+                                <div class="btn clr-green bg-green-ex-light rounded font-weight-bold px-5 py-2">
+                                    Full Time
+                                </div>
+                                <div class="lead my-3 font-15">
+                                    <p>We are looking for a talented UI/UX Designer to join our team. As a UI/UX Designer, you will be r...
+                                </div>
+                            </div>
+                            <div class="col-md-4 p-2 text-center">
+                                <div class="wrap-des py-3 rounded p-0" style="border: solid 1px #c0e8ca;">
+                                    <div class="h4 font-weight-bold clr-dark-blue mb-5 mt-4">Job Closed in</div>
+                                    <div class="display-1 clr-green mt-4 font-weight-bold font-Josefin">
+                                        45
+                                    </div>
+                                    <div class="h2 font-weight-light text-muted pre">D  A  Y  S</div>
+                                    <div class="btn font-15 mt-2 text-white font-Kulim-Park py-1 px-4 bg-green">
+
+                                        <a class="text-white" href="job-details/kLqqFxyZdALA.html">Details</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div id="feat4" class="row mt-5">
+            <div class="col-lg-6 ">
+                <div class="box-wrap p-3 px-3 border-sec-3 ">
+                        <div class="row align-items-center">
+                            <div class="col-md-8 clr-dark-blue">
+                                <div class="row align-items-center">
+                                    <div class="col-5">
+                                        <img src="https://masterbundles.com/wp-content/uploads/2022/10/rhino-logo-design-323-490x490.jpg" width="80px" alt="">
+                                    </div>
+                                    <div class="col-7 p-lg-0">
+                                        <h6 class="text-black font-weight-bold">
+                                            Jober Clock Biz
+                                        </h6>
+                                        <div class="text-muted small">
+                                            19th Dec, 2023
+                                        </div>
+                                        <div class="d-flex align-items-center small my-2">
+                                            <span class="material-symbols-outlined">pin_drop</span>
+                                            <div class="text-dark">
+                                                Ngor Okpala, Imo, Nigeria
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center small my-1">
+                                            <span class="mx-2">₦</span>
+                                            <div class="text-dark">450,000 - 650,000</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="h2 font-weight-bold my-3">Python Developer</div>
+                                <div class="btn clr-green bg-green-ex-light rounded font-weight-bold px-5 py-2">
+                                    Part Time
+                                </div>
+                                <div class="lead my-3 font-15">
+                                    <p>We are seeking a talented and experienced Senior UI/UX Designer to join our team. The ideal candi...
+                                </div>
+                            </div>
+                            <div class="col-md-4 p-2 text-center">
+                                <div class="wrap-des py-3 rounded p-0" style="border: solid 1px #c0e8ca;">
+                                    <div class="h4 font-weight-bold clr-dark-blue mb-5 mt-4">Job Closed in</div>
+                                    <div class="display-1 clr-green mt-4 font-weight-bold font-Josefin">
+                                        67
+                                    </div>
+                                    <div class="h2 font-weight-light text-muted pre">D  A  Y  S</div>
+                                    <div class="btn font-15 mt-2 text-white font-Kulim-Park py-1 px-4 bg-green">
+
+                                        <a class="text-white" href="job-details/zqP7G0vnzy6R.html">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-lg-6  mt-5 ">
+                <div class="box-wrap p-3 px-3 border-sec-3  mt-5 ">
+                        <div class="row align-items-center">
+                            <div class="col-md-8 clr-dark-blue">
+                                <div class="row align-items-center">
+                                    <div class="col-5">
+                                        <img src="https://www.freepnglogos.com/uploads/company-logo-png/company-logo-transparent-png-19.png" width="80px" alt="">
+                                    </div>
+                                    <div class="col-7 p-lg-0">
+                                        <h6 class="text-black font-weight-bold">
+                                            Ceptic Apptech
+                                        </h6>
+                                        <div class="text-muted small">
+                                            17th Apr, 2023
+                                        </div>
+                                        <div class="d-flex align-items-center small my-2">
+                                            <span class="material-symbols-outlined">pin_drop</span>
+                                            <div class="text-dark">
+                                                Owerri West, Imo, Nigeria
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center small my-1">
+                                            <span class="mx-2">₦</span>
+                                            <div class="text-dark">200,000 - 300,000</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="h2 font-weight-bold my-3">SQL Developer</div>
+                                <div class="btn clr-green bg-green-ex-light rounded font-weight-bold px-5 py-2">
+                                    Contract
+                                </div>
+                                <div class="lead my-3 font-15">
+                                    <p>We are looking for a talented UI/UX Designer to join our team. As a UI/UX Designer, you will be r...
+                                </div>
+                            </div>
+                            <div class="col-md-4 p-2 text-center">
+                                <div class="wrap-des py-3 rounded p-0" style="border: solid 1px #c0e8ca;">
+                                    <div class="h4 font-weight-bold clr-dark-blue mb-5 mt-4">Job Closed in</div>
+                                    <div class="display-1 clr-green mt-4 font-weight-bold font-Josefin">
+                                        45
+                                    </div>
+                                    <div class="h2 font-weight-light text-muted pre">D  A  Y  S</div>
+                                    <div class="btn font-15 mt-2 text-white font-Kulim-Park py-1 px-4 bg-green">
+
+                                        <a class="text-white" href="job-details/kLqqFxyZdALA.html">Details</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div id="feat5" class="row mt-5">
+            <div class="col-lg-6 ">
+                <div class="box-wrap p-3 px-3 border-sec-3 ">
+                    <div class="row align-items-center">
+                        <div class="col-md-8 clr-dark-blue">
+                            <div class="row align-items-center">
+                                <div class="col-5">
+                                    <img src="uploads/profile-pictures/10/aaa.jpg" width="80px" alt="">
+                                </div>
+                                <div class="col-7 p-lg-0">
+                                    <h6 class="text-black font-weight-bold">
+                                        ByteBuilders Inc.
+                                    </h6>
+                                    <div class="text-muted small">
+                                        17th Apr, 2023
+                                    </div>
+                                    <div class="d-flex align-items-center small my-2">
+                                        <span class="material-symbols-outlined">pin_drop</span>
+                                        <div class="text-dark">
+                                            Ngor Okpala, Imo, Nigeria
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center small my-1">
+                                        <span class="mx-2">₦</span>
+                                        <div class="text-dark">450,000 - 650,000</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="h2 font-weight-bold my-3">Senior UI/UX Designer</div>
+                            <div class="btn clr-green bg-green-ex-light rounded font-weight-bold px-5 py-2">
+                                Full Time
+                            </div>
+                            <div class="lead my-3 font-15">
+                                <p>We are seeking a talented and experienced Senior UI/UX Designer to join our team. The ideal candi...
+                            </div>
+                        </div>
+                        <div class="col-md-4 p-2 text-center">
+                            <div class="wrap-des py-3 rounded p-0" style="border: solid 1px #c0e8ca;">
+                                <div class="h4 font-weight-bold clr-dark-blue mb-5 mt-4">Job Closed in</div>
+                                <div class="display-1 clr-green mt-4 font-weight-bold font-Josefin">
+                                    21
+                                </div>
+                                <div class="h2 font-weight-light text-muted pre">D  A  Y  S</div>
+                                <div class="btn font-15 mt-2 text-white font-Kulim-Park py-1 px-4 bg-green">
+
+                                    <a class="text-white" href="job-details/zqP7G0vnzy6R.html">Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6  mt-5 ">
+                <div class="box-wrap p-3 px-3 border-sec-3  mt-5 ">
+                    <div class="row align-items-center">
+                        <div class="col-md-8 clr-dark-blue">
+                            <div class="row align-items-center">
+                                <div class="col-5">
+                                    <img src="uploads/profile-pictures/7/a.jpg" width="80px" alt="">
+                                </div>
+                                <div class="col-7 p-lg-0">
+                                    <h6 class="text-black font-weight-bold">
+                                        AppHive Innovations
+                                    </h6>
+                                    <div class="text-muted small">
+                                        17th Apr, 2023
+                                    </div>
+                                    <div class="d-flex align-items-center small my-2">
+                                        <span class="material-symbols-outlined">pin_drop</span>
+                                        <div class="text-dark">
+                                            Owerri West, Imo, Nigeria
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center small my-1">
+                                        <span class="mx-2">₦</span>
+                                        <div class="text-dark">200,000 - 300,000</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="h2 font-weight-bold my-3">UI UX Designer</div>
+                            <div class="btn clr-green bg-green-ex-light rounded font-weight-bold px-5 py-2">
+                                Contract
+                            </div>
+                            <div class="lead my-3 font-15">
+                                <p>We are looking for a talented UI/UX Designer to join our team. As a UI/UX Designer, you will be r...
+                            </div>
+                        </div>
+                        <div class="col-md-4 p-2 text-center">
+                            <div class="wrap-des py-3 rounded p-0" style="border: solid 1px #c0e8ca;">
+                                <div class="h4 font-weight-bold clr-dark-blue mb-5 mt-4">Job Closed in</div>
+                                <div class="display-1 clr-green mt-4 font-weight-bold font-Josefin">
+                                    15
+                                </div>
+                                <div class="h2 font-weight-light text-muted pre">D  A  Y  S</div>
+                                <div class="btn font-15 mt-2 text-white font-Kulim-Park py-1 px-4 bg-green">
+
+                                    <a class="text-white" href="job-details/kLqqFxyZdALA.html">Details</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section-4 my-5 py-5" data-aos="fade-down">
+    <div class="container">
+        <div class="h1 font-weight-bold clr-dark-blue text-center">Verified Employers</div>
+
+        <div class="lead text-center mb-5">
+            Explore and find the dream job opportunities with our best companies and employers.
+        </div>
+        <div class="row">
+                            <div class="col-lg-4 mt-4">
+                    <div class="border-sec-4 p-4 rounded">
+                        <div class="d-flex align-items-center">
+                            <img src="uploads/profile-pictures/1/1618099961707.jpg" alt="company_logo" width="80px">
+                            
+                            <div class="sec-4-tec-info ml-2">
+                                <h5 class="font-weight-bold font-Kulim-Park">
+                                    <a href="company-details/d1YjqFz2PGzo.html" style="text-decoration:none; color:#000;">
+                                        nHub Nigeria
+                                    </a>
+                                    
+                                </h5>
+                                <div class="start-wrap d-flex">
+                                    <div class="rated-y clr-yellow">
+                                        <span class="material-symbols-outlined">star</span>
+                                        <span class="material-symbols-outlined">star</span>
+                                        <span class="material-symbols-outlined">star</span>
+                                        <span class="material-symbols-outlined">star</span>
+                                        <span class="material-symbols-outlined">star</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="text-15 d-flex align-items-center font-Comfortaa mt-4">
+                                <span class="material-symbols-outlined mr-2">person</span>
+                                11-20
+                                 employees
+                            </div>
+                            <div class="text-15 d-flex align-items-center font-Comfortaa mt-4">
+                                2 
+                                job(s) open
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col-lg-4 mt-4">
+                    <div class="border-sec-4 p-4 rounded">
+                        <div class="d-flex align-items-center">
+                            <img src="uploads/profile-pictures/6/cercul.png" alt="company_logo" width="80px">
+                            
+                            <div class="sec-4-tec-info ml-2">
+                                <h5 class="font-weight-bold font-Kulim-Park">
+                                    <a href="company-details/jIlfHBGavut1.html" style="text-decoration:none; color:#000;">
+                                        CodeBlaze Technologies
+                                    </a>
+                                    
+                                </h5>
+                                <div class="start-wrap d-flex">
+                                    <div class="rated-y clr-yellow">
+                                        <span class="material-symbols-outlined">star</span>
+                                        <span class="material-symbols-outlined">star</span>
+                                        <span class="material-symbols-outlined">star</span>
+                                        <span class="material-symbols-outlined">star</span>
+                                        <span class="material-symbols-outlined">star</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="text-15 d-flex align-items-center font-Comfortaa mt-4">
+                                <span class="material-symbols-outlined mr-2">person</span>
+                                21-50
+                                 employees
+                            </div>
+                            <div class="text-15 d-flex align-items-center font-Comfortaa mt-4">
+                                0 
+                                job(s) open
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col-lg-4 mt-4">
+                    <div class="border-sec-4 p-4 rounded">
+                        <div class="d-flex align-items-center">
+                            <img src="uploads/profile-pictures/7/a.jpg" alt="company_logo" width="80px">
+                            
+                            <div class="sec-4-tec-info ml-2">
+                                <h5 class="font-weight-bold font-Kulim-Park">
+                                    <a href="company-details/YSPTexW7hGsX.html" style="text-decoration:none; color:#000;">
+                                        AppHive Innovations
+                                    </a>
+                                    
+                                </h5>
+                                <div class="start-wrap d-flex">
+                                    <div class="rated-y clr-yellow">
+                                        <span class="material-symbols-outlined">star</span>
+                                        <span class="material-symbols-outlined">star</span>
+                                        <span class="material-symbols-outlined">star</span>
+                                        <span class="material-symbols-outlined">star</span>
+                                        <span class="material-symbols-outlined">star</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="text-15 d-flex align-items-center font-Comfortaa mt-4">
+                                <span class="material-symbols-outlined mr-2">person</span>
+                                21-50
+                                 employees
+                            </div>
+                            <div class="text-15 d-flex align-items-center font-Comfortaa mt-4">
+                                1 
+                                job(s) open
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col-lg-4 mt-4">
+                    <div class="border-sec-4 p-4 rounded">
+                        <div class="d-flex align-items-center">
+                            <img src="uploads/profile-pictures/8/d.jpg" alt="company_logo" width="80px">
+                            
+                            <div class="sec-4-tec-info ml-2">
+                                <h5 class="font-weight-bold font-Kulim-Park">
+                                    <a href="company-details/bpvx1q0skj2X.html" style="text-decoration:none; color:#000;">
+                                        DataFortress Technologies
+                                    </a>
+                                    
+                                </h5>
+                                <div class="start-wrap d-flex">
+                                    <div class="rated-y clr-yellow">
+                                        <span class="material-symbols-outlined">star</span>
+                                        <span class="material-symbols-outlined">star</span>
+                                        <span class="material-symbols-outlined">star</span>
+                                        <span class="material-symbols-outlined">star</span>
+                                        <span class="material-symbols-outlined">star</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="text-15 d-flex align-items-center font-Comfortaa mt-4">
+                                <span class="material-symbols-outlined mr-2">person</span>
+                                5-10
+                                 employees
+                            </div>
+                            <div class="text-15 d-flex align-items-center font-Comfortaa mt-4">
+                                0 
+                                job(s) open
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col-lg-4 mt-4">
+                    <div class="border-sec-4 p-4 rounded">
+                        <div class="d-flex align-items-center">
+                            <img src="uploads/profile-pictures/9/aa.jpg" alt="company_logo" width="80px">
+                            
+                            <div class="sec-4-tec-info ml-2">
+                                <h5 class="font-weight-bold font-Kulim-Park">
+                                    <a href="company-details/ITBVKrfzu1qS.html" style="text-decoration:none; color:#000;">
+                                        SoftSpectrum Solutions
+                                    </a>
+                                    
+                                </h5>
+                                <div class="start-wrap d-flex">
+                                    <div class="rated-y clr-yellow">
+                                        <span class="material-symbols-outlined">star</span>
+                                        <span class="material-symbols-outlined">star</span>
+                                        <span class="material-symbols-outlined">star</span>
+                                        <span class="material-symbols-outlined">star</span>
+                                        <span class="material-symbols-outlined">star</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="text-15 d-flex align-items-center font-Comfortaa mt-4">
+                                <span class="material-symbols-outlined mr-2">person</span>
+                                11-20
+                                 employees
+                            </div>
+                            <div class="text-15 d-flex align-items-center font-Comfortaa mt-4">
+                                0 
+                                job(s) open
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col-lg-4 mt-4">
+                    <div class="border-sec-4 p-4 rounded">
+                        <div class="d-flex align-items-center">
+                            <img src="uploads/profile-pictures/10/aaa.jpg" alt="company_logo" width="80px">
+                            
+                            <div class="sec-4-tec-info ml-2">
+                                <h5 class="font-weight-bold font-Kulim-Park">
+                                    <a href="company-details/iwPWfSqVxCLC.html" style="text-decoration:none; color:#000;">
+                                        ByteBuilders Inc.
+                                    </a>
+                                    
+                                </h5>
+                                <div class="start-wrap d-flex">
+                                    <div class="rated-y clr-yellow">
+                                        <span class="material-symbols-outlined">star</span>
+                                        <span class="material-symbols-outlined">star</span>
+                                        <span class="material-symbols-outlined">star</span>
+                                        <span class="material-symbols-outlined">star</span>
+                                        <span class="material-symbols-outlined">star</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="text-15 d-flex align-items-center font-Comfortaa mt-4">
+                                <span class="material-symbols-outlined mr-2">person</span>
+                                51-100
+                                 employees
+                            </div>
+                            <div class="text-15 d-flex align-items-center font-Comfortaa mt-4">
+                                1 
+                                job(s) open
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                        
+        </div>
+        <div class="mt-5 text-center cursor-pointer h4">
+            <a href="company-lists.html" style="text-decoration:none; color:#000;">
+                View All Verified Employers
+            </a>
+            <hr class="p-0 w-25 m-0 m-auto border-1 ">
+        </div>
+    </div>
+</div>
+<!--<div class="section-5 " data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+    <div class="container">
+        <div class="h1 font-weight-bold clr-dark-blue">More for Imo State Citizens & Residents</div>
+        <div class="lead mb-5">These are some of the programmes specially design to support Imo State residents to be gainfully employed .</div>
+        <div class="row mt-3">
+            <div class="col-lg-4 rounded">
+                <div class="citiz-box p-2">
+                    <img src="front_web/home/img/citiz1.png" alt="" class="w-100 rounded citiz-img">
+                    <div class="h5 font-weight-bold my-3">SKILLUP IMO PROGRAMME</div>
+                    <div class="text-15 text-justify font-Kulim-Park font-weight-light">Do you have a passion in a particular job, lack the skill and knowledge to get your dream job?
+                        Register to acquire the skill to start your dream...</div>
+                    <div class="btn py-1 my-3 px-4 bg-green-ex-light clr-green citiz-btn">Click to Start</div>
+                </div>
+            </div>
+            <div class="col-lg-4 rounded">
+                <div class="citiz-box p-2">
+                    <img src="front_web/home/img/citiz2.png" alt="" class="w-100 rounded citiz-img">
+                    <div class="h5 font-weight-bold my-3">IMO WORK AND LEARN PROGRAMME- IWALP</div>
+                    <div class="text-15 text-justify font-Kulim-Park font-weight-light">Do you have the basic knowledge and skill, but need further training to advance in your choosing career while earning?</div>
+                    <div class="btn py-1 my-3 px-4 bg-green-ex-light clr-green citiz-btn">Click to Start</div>
+                </div>
+            </div>
+            <div class="col-lg-4 rounded">
+                <div class="citiz-box p-2">
+                    <img src="front_web/home/img/citiz1.png" alt="" class="w-100 rounded citiz-img">
+                    <div class="h5 font-weight-bold my-3">STARTUP IMO</div>
+                    <div class="text-15 text-justify font-Kulim-Park font-weight-light">Do you have a viable business idea, but need financial and other supports to start and grow your business. </div>
+                    <div class="btn py-1 my-3 px-4 bg-green-ex-light clr-green citiz-btn">Click to Start</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>-->
+<div class="section-6 pt-5 mt-5 mb-5" data-aos="fade-up"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="300"
+     data-aos-offset="0">
+    <div class="container">
+        <div class="h1 font-weight-bold clr-dark-blue text-center">Explore our Job Categories</div>
+        <div class="lead mb-5 text-center">Get started by looking at our job categories. Hundreds of new jobs everyday!</div>
+        <div class="d-flex flex-wrap">
+                            <div class="sec-6-box mt-4 px-2">
+                    <div class="row align-items-center">
+                        <div class="col-4">
+                            <div class="py-2 rounded px-4 d-flex align-items-center justify-content-center bg-green-ex-light clr-green">
+                                <span class="material-symbols-outlined font-50">code</span>
+                            </div>
+                        </div>
+                        <div class="col-8 pl-1">
+                            <h6 class="font-weight-bold font-Kulim-Park">
+                                <a href="search-jobs.html" style="text-decoration:none; color:#000">
+                                    Software Engineer
+                                </a>
+                            </h6>
+                            <div class="text-14 font-Comfortaa">3,450 open jobs</div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="sec-6-box mt-4 px-2">
+                    <div class="row align-items-center">
+                        <div class="col-4">
+                            <div class="py-2 rounded px-4 d-flex align-items-center justify-content-center bg-green-ex-light clr-green">
+                                <span class="material-symbols-outlined font-50">code</span>
+                            </div>
+                        </div>
+                        <div class="col-8 pl-1">
+                            <h6 class="font-weight-bold font-Kulim-Park">
+                                <a href="search-jobs.html" style="text-decoration:none; color:#000">
+                                    Front-end Developer
+                                </a>
+                            </h6>
+                            <div class="text-14 font-Comfortaa">3,450 open jobs</div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="sec-6-box mt-4 px-2">
+                    <div class="row align-items-center">
+                        <div class="col-4">
+                            <div class="py-2 rounded px-4 d-flex align-items-center justify-content-center bg-green-ex-light clr-green">
+                                <span class="material-symbols-outlined font-50">code</span>
+                            </div>
+                        </div>
+                        <div class="col-8 pl-1">
+                            <h6 class="font-weight-bold font-Kulim-Park">
+                                <a href="search-jobs.html" style="text-decoration:none; color:#000">
+                                    Back-end Developer
+                                </a>
+                            </h6>
+                            <div class="text-14 font-Comfortaa">3,450 open jobs</div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="sec-6-box mt-4 px-2">
+                    <div class="row align-items-center">
+                        <div class="col-4">
+                            <div class="py-2 rounded px-4 d-flex align-items-center justify-content-center bg-green-ex-light clr-green">
+                                <span class="material-symbols-outlined font-50">code</span>
+                            </div>
+                        </div>
+                        <div class="col-8 pl-1">
+                            <h6 class="font-weight-bold font-Kulim-Park">
+                                <a href="search-jobs.html" style="text-decoration:none; color:#000">
+                                    Full-stack Developer
+                                </a>
+                            </h6>
+                            <div class="text-14 font-Comfortaa">3,450 open jobs</div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="sec-6-box mt-4 px-2">
+                    <div class="row align-items-center">
+                        <div class="col-4">
+                            <div class="py-2 rounded px-4 d-flex align-items-center justify-content-center bg-green-ex-light clr-green">
+                                <span class="material-symbols-outlined font-50">code</span>
+                            </div>
+                        </div>
+                        <div class="col-8 pl-1">
+                            <h6 class="font-weight-bold font-Kulim-Park">
+                                <a href="search-jobs.html" style="text-decoration:none; color:#000">
+                                    Mobile Developer
+                                </a>
+                            </h6>
+                            <div class="text-14 font-Comfortaa">3,450 open jobs</div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="sec-6-box mt-4 px-2">
+                    <div class="row align-items-center">
+                        <div class="col-4">
+                            <div class="py-2 rounded px-4 d-flex align-items-center justify-content-center bg-green-ex-light clr-green">
+                                <span class="material-symbols-outlined font-50">code</span>
+                            </div>
+                        </div>
+                        <div class="col-8 pl-1">
+                            <h6 class="font-weight-bold font-Kulim-Park">
+                                <a href="search-jobs.html" style="text-decoration:none; color:#000">
+                                    DevOps Engineer
+                                </a>
+                            </h6>
+                            <div class="text-14 font-Comfortaa">3,450 open jobs</div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="sec-6-box mt-4 px-2">
+                    <div class="row align-items-center">
+                        <div class="col-4">
+                            <div class="py-2 rounded px-4 d-flex align-items-center justify-content-center bg-green-ex-light clr-green">
+                                <span class="material-symbols-outlined font-50">code</span>
+                            </div>
+                        </div>
+                        <div class="col-8 pl-1">
+                            <h6 class="font-weight-bold font-Kulim-Park">
+                                <a href="search-jobs.html" style="text-decoration:none; color:#000">
+                                    Data Scientist
+                                </a>
+                            </h6>
+                            <div class="text-14 font-Comfortaa">3,450 open jobs</div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="sec-6-box mt-4 px-2">
+                    <div class="row align-items-center">
+                        <div class="col-4">
+                            <div class="py-2 rounded px-4 d-flex align-items-center justify-content-center bg-green-ex-light clr-green">
+                                <span class="material-symbols-outlined font-50">code</span>
+                            </div>
+                        </div>
+                        <div class="col-8 pl-1">
+                            <h6 class="font-weight-bold font-Kulim-Park">
+                                <a href="search-jobs.html" style="text-decoration:none; color:#000">
+                                    Machine Learning Engineer
+                                </a>
+                            </h6>
+                            <div class="text-14 font-Comfortaa">3,450 open jobs</div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="sec-6-box mt-4 px-2">
+                    <div class="row align-items-center">
+                        <div class="col-4">
+                            <div class="py-2 rounded px-4 d-flex align-items-center justify-content-center bg-green-ex-light clr-green">
+                                <span class="material-symbols-outlined font-50">code</span>
+                            </div>
+                        </div>
+                        <div class="col-8 pl-1">
+                            <h6 class="font-weight-bold font-Kulim-Park">
+                                <a href="search-jobs.html" style="text-decoration:none; color:#000">
+                                    UI UX Design
+                                </a>
+                            </h6>
+                            <div class="text-14 font-Comfortaa">3,450 open jobs</div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="sec-6-box mt-4 px-2">
+                    <div class="row align-items-center">
+                        <div class="col-4">
+                            <div class="py-2 rounded px-4 d-flex align-items-center justify-content-center bg-green-ex-light clr-green">
+                                <span class="material-symbols-outlined font-50">code</span>
+                            </div>
+                        </div>
+                        <div class="col-8 pl-1">
+                            <h6 class="font-weight-bold font-Kulim-Park">
+                                <a href="search-jobs.html" style="text-decoration:none; color:#000">
+                                    Data Engineer
+                                </a>
+                            </h6>
+                            <div class="text-14 font-Comfortaa">3,450 open jobs</div>
+                        </div>
+                    </div>
+                </div>
+                        
+        </div>
+    </div>
+</div>
+<div class="section-7-new w-100 py-5 ">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <img src="front_web/home/img/iwlp-img.jpg" alt="" class="w-100 rounded">
+            </div>
+            <div class="col-lg-6">
+                <div class="py-3 pl-2">
+                    <div class="h2 pb-3 font-archivo font-weight-bold">Imo Work and Learn programme</div>
+                    <div class="lead">
+                        <div class="pb-2">
+                            Imo Work and Learn programme Description
+                        </div>
+                        <div class="pb-2">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, dignissimos, totam? Cupiditate laboriosam nemo quasi quibusdam quisquam suscipit ullam voluptatum.
+                        </div>
+                        <div class="btn py-2 font-weight-bold font-archivo px-4 mt-4  bg-yellow hover-light">Learn More</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section-9" data-aos="fade-up">
+        <div class="container">
+            <div class="h1 font-weight-bold clr-dark-blue text-center">Most Popular Job in</div>
+            <div class="row">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4 mb-4">
+                    <div class="dropdown-1">
+                        <div class="select d-flex h1 text-center clr-green align-items-center justify-content-between">
+                            <div class="spac"></div>
+                            <div id="most-pop-data">UI Designer</div>
+                            <i class="fa fa-chevron-left"></i>
+                        </div>
+                        <input type="hidden" name="gender">
+                        <ul class="dropdown-1-menu">
+                            <li id="most-pop-5" class="uiD-trig">UI Designer</li>
+                            <li id="most-pop-1" class="lara-trig">Laravel</li>
+                            <li id="most-pop-2" class="javas-trig">Javascript</li>
+                            <li id="most-pop-3" class="php-trig">PHP</li>
+                            <li id="most-pop-4" class="myS-trig">SQL</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4"></div>
+            </div>
+            <div class="lead mb-5 text-center w-75 m-auto">Find the best paying jobs based on the job category. 100% safe recruitment process
+                with transparent progress and real-time assessment.</div>
+            <div id="ui-designer" class="row mt-3 py-4">
+                <div class="col-lg-4">
+                    <div class="uiJobs-card sec-9-card shadow-md p-4 rounded">
+                            <div class="h5 font-archivo">Senior UI/UX Designer</div>
+                            <div class="d-flex my-3 align-items-center">
+                                <img src="uploads/profile-pictures/10/aaa.jpg" width="50px" alt="">
+                                <div class="lead ml-3">
+                                    ByteBuilders Inc.
+                                </div>
+                            </div>
+                            <div class="px-4 btn my-2 py-1 bg-green-ex-light clr-green">
+                                Full Time
+                            </div>
+                            <ul class="pop-list">
+                                <li>&nbsp; Bachelor's degree in design or related</li>
+                                <li>&nbsp; 5+ years of experience in UI design</li>
+                                <li>&nbsp; Proficiency in Figma.</li>
+                            </ul>
+                            <div class="d-flex align-items-center font-weight-bold my-2">
+                                <span class="material-symbols-outlined">pin_drop</span>
+                                <div class="text-dark">
+                                    Ngor Okpala, Imo
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center font-15 mb-4 font-weight-bold my-1">
+                                <span class="mx-2">₦</span>
+                                <div class="text-dark">
+                                    450,000 - 650,000 per month
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mt-4 justify-content-around">
+                                <div class="py-1 rounded px-4 bg-green font-15-1 text-white font-archivo">
+                                    <a class="text-white" href="job-details/kLqqFxyZdALA.html" style="text-decoration:none">Apply This Job</a>
+                                </div>
+                                <!-- <div class="py-1 px-4 rounded border-green clr-green"><span class="material-symbols-outlined mt-1">bookmark</span></div> -->
+                            </div>
+                        </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="uiJobs-card sec-9-card shadow-md p-4 rounded">
+                            <div class="h5 font-archivo">UI UX Designer</div>
+                            <div class="d-flex my-3 align-items-center">
+                                <img src="uploads/profile-pictures/7/a.jpg" width="50px" alt="">
+                                <div class="lead ml-3">
+                                    AppHive Innovations
+                                </div>
+                            </div>
+                            <div class="px-4 btn my-2 py-1 bg-green-ex-light clr-green">
+                                Contract
+                            </div>
+                            <ul class="pop-list">
+                                <li>&nbsp; Bachelor's degree in design or related</li>
+                                <li>&nbsp; 6+ years of experience in UI design</li>
+                                <li>&nbsp; Proficiency in Figma.</li>
+                            </ul>
+                            <div class="d-flex align-items-center font-weight-bold my-2">
+                                <span class="material-symbols-outlined">pin_drop</span>
+                                <div class="text-dark">
+                                    Owerri West, Imo
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center font-15 mb-4 font-weight-bold my-1">
+                                <span class="mx-2">₦</span>
+                                <div class="text-dark">
+                                    200,000 - 300,000 per month
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mt-4 justify-content-around">
+                                <div class="py-1 rounded px-4 bg-green font-15-1 text-white font-archivo">
+                                    <a class="text-white" href="job-details/kLqqFxyZdALA.html" style="text-decoration:none">Apply This Job</a>
+                                </div>
+                                <!-- <div class="py-1 px-4 rounded border-green clr-green"><span class="material-symbols-outlined mt-1">bookmark</span></div> -->
+                            </div>
+                        </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="uiJobs-card sec-9-card shadow-md p-4 rounded">
+                            <div class="h5 font-archivo">UI UX Designer</div>
+                            <div class="d-flex my-3 align-items-center">
+                                <img src="uploads/profile-pictures/1/1618099961707.jpg" width="50px" alt="">
+                                <div class="lead ml-3">
+                                    nHub Nigeria
+                                </div>
+                            </div>
+                            <div class="px-4 btn my-2 py-1 bg-green-ex-light clr-green">
+                                Full Time
+                            </div>
+                            <ul class="pop-list">
+                                <li>&nbsp; Bachelor's degree in design or related</li>
+                                <li>&nbsp; 2+ years of experience in UI design</li>
+                                <li>&nbsp; Proficiency in Figma.</li>
+                            </ul>
+                            <div class="d-flex align-items-center font-weight-bold my-2">
+                                <span class="material-symbols-outlined">pin_drop</span>
+                                <div class="text-dark">
+                                    Aboh, Imo
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center font-15 mb-4 font-weight-bold my-1">
+                                <span class="mx-2">₦</span>
+                                <div class="text-dark">
+                                    80,000 - 120,000 per month
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mt-4 justify-content-around">
+                                <div class="py-1 rounded px-4 bg-green font-15-1 text-white font-archivo">
+                                    <a class="text-white" href="job-details/kLqqFxyZdALA.html" style="text-decoration:none">Apply This Job</a>
+                                </div>
+                                <!-- <div class="py-1 px-4 rounded border-green clr-green"><span class="material-symbols-outlined mt-1">bookmark</span></div> -->
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div id="laravel" class="row mt-3 py-4">
+                <div class="col-lg-4">
+                    <div class="uiJobs-card sec-9-card shadow-md p-4 rounded">
+                            <div class="h5 font-archivo">Senior Laravel Developer</div>
+                            <div class="d-flex my-3 align-items-center">
+                                <img src="uploads/profile-pictures/10/aaa.jpg" width="50px" alt="">
+                                <div class="lead ml-3">
+                                    ByteBuilders Inc.
+                                </div>
+                            </div>
+                            <div class="px-4 btn my-2 py-1 bg-green-ex-light clr-green">
+                                Full Time
+                            </div>
+                            <ul class="pop-list">
+                                <li>&nbsp; Bachelor's degree in design or related</li>
+                                <li>&nbsp; 5+ years of experience in UI design</li>
+                                <li>&nbsp; Proficiency in Figma.</li>
+                            </ul>
+                            <div class="d-flex align-items-center font-weight-bold my-2">
+                                <span class="material-symbols-outlined">pin_drop</span>
+                                <div class="text-dark">
+                                    Ngor Okpala, Imo
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center font-15 mb-4 font-weight-bold my-1">
+                                <span class="mx-2">₦</span>
+                                <div class="text-dark">
+                                    450,000 - 650,000 per month
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mt-4 justify-content-around">
+                                <div class="py-1 rounded px-4 bg-green font-15-1 text-white font-archivo">
+                                    <a class="text-white" href="job-details/kLqqFxyZdALA.html" style="text-decoration:none">Apply This Job</a>
+                                </div>
+                                <!-- <div class="py-1 px-4 rounded border-green clr-green"><span class="material-symbols-outlined mt-1">bookmark</span></div> -->
+                            </div>
+                        </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="uiJobs-card sec-9-card shadow-md p-4 rounded">
+                            <div class="h5 font-archivo">Laravel Seed Developer Needed</div>
+                            <div class="d-flex my-3 align-items-center">
+                                <img src="https://img.freepik.com/free-vector/abstract-logo-flame-shape_1043-44.jpg" width="50px" alt="">
+                                <div class="lead ml-3">
+                                    LUMaB Ventures
+                                </div>
+                            </div>
+                            <div class="px-4 btn my-2 py-1 bg-green-ex-light clr-green">
+                                Part Time
+                            </div>
+                            <ul class="pop-list">
+                                <li>&nbsp; Bachelor's degree in design or related</li>
+                                <li>&nbsp; 6+ years of experience in UI design</li>
+                                <li>&nbsp; Proficiency in Figma.</li>
+                            </ul>
+                            <div class="d-flex align-items-center font-weight-bold my-2">
+                                <span class="material-symbols-outlined">pin_drop</span>
+                                <div class="text-dark">
+                                    Owerri West, Imo
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center font-15 mb-4 font-weight-bold my-1">
+                                <span class="mx-2">₦</span>
+                                <div class="text-dark">
+                                    200,000 - 300,000 per month
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mt-4 justify-content-around">
+                                <div class="py-1 rounded px-4 bg-green font-15-1 text-white font-archivo">
+                                    <a class="text-white" href="job-details/kLqqFxyZdALA.html" style="text-decoration:none">Apply This Job</a>
+                                </div>
+                                <!-- <div class="py-1 px-4 rounded border-green clr-green"><span class="material-symbols-outlined mt-1">bookmark</span></div> -->
+                            </div>
+                        </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="uiJobs-card sec-9-card shadow-md p-4 rounded">
+                            <div class="h5 font-archivo">Paypal Laravel SDK Developer</div>
+                            <div class="d-flex my-3 align-items-center">
+                                <img src="https://img.freepik.com/free-vector/abstract-colorful-logo_23-2147504722.jpg" width="50px" alt="">
+                                <div class="lead ml-3">
+                                    Maintain PLC
+                                </div>
+                            </div>
+                            <div class="px-4 btn my-2 py-1 bg-green-ex-light clr-green">
+                                Full Time
+                            </div>
+                            <ul class="pop-list">
+                                <li>&nbsp; Bachelor's degree in design or related</li>
+                                <li>&nbsp; 2+ years of experience in UI design</li>
+                                <li>&nbsp; Proficiency in Figma.</li>
+                            </ul>
+                            <div class="d-flex align-items-center font-weight-bold my-2">
+                                <span class="material-symbols-outlined">pin_drop</span>
+                                <div class="text-dark">
+                                    Aboh, Imo
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center font-15 mb-4 font-weight-bold my-1">
+                                <span class="mx-2">₦</span>
+                                <div class="text-dark">
+                                    80,000 - 120,000 per month
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mt-4 justify-content-around">
+                                <div class="py-1 rounded px-4 bg-green font-15-1 text-white font-archivo">
+                                    <a class="text-white" href="job-details/kLqqFxyZdALA.html" style="text-decoration:none">Apply This Job</a>
+                                </div>
+                                <!-- <div class="py-1 px-4 rounded border-green clr-green"><span class="material-symbols-outlined mt-1">bookmark</span></div> -->
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div id="javascript" class="row mt-3 py-4">
+                <div class="col-lg-4">
+                    <div class="uiJobs-card sec-9-card shadow-md p-4 rounded">
+                            <div class="h5 font-archivo">Jquery WebApp Developer</div>
+                            <div class="d-flex my-3 align-items-center">
+                                <img src="https://cdn.logojoy.com/wp-content/uploads/2018/05/01104846/1952-768x591.png" width="50px" alt="">
+                                <div class="lead ml-3">
+                                    Deploy Hub INC
+                                </div>
+                            </div>
+                            <div class="px-4 btn my-2 py-1 bg-green-ex-light clr-green">
+                                Contract
+                            </div>
+                            <ul class="pop-list">
+                                <li>&nbsp; Bachelor's degree in design or related</li>
+                                <li>&nbsp; 5+ years of experience in UI design</li>
+                                <li>&nbsp; Proficiency in Figma.</li>
+                            </ul>
+                            <div class="d-flex align-items-center font-weight-bold my-2">
+                                <span class="material-symbols-outlined">pin_drop</span>
+                                <div class="text-dark">
+                                    Ngor Okpala, Imo
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center font-15 mb-4 font-weight-bold my-1">
+                                <span class="mx-2">₦</span>
+                                <div class="text-dark">
+                                    450,000 - 650,000 per month
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mt-4 justify-content-around">
+                                <div class="py-1 rounded px-4 bg-green font-15-1 text-white font-archivo">
+                                    <a class="text-white" href="job-details/kLqqFxyZdALA.html" style="text-decoration:none">Apply This Job</a>
+                                </div>
+                                <!-- <div class="py-1 px-4 rounded border-green clr-green"><span class="material-symbols-outlined mt-1">bookmark</span></div> -->
+                            </div>
+                        </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="uiJobs-card sec-9-card shadow-md p-4 rounded">
+                            <div class="h5 font-archivo">Angular Developer Needed</div>
+                            <div class="d-flex my-3 align-items-center">
+                                <img src="https://img.freepik.com/premium-vector/letter-f-logo-design_358347-435.jpg?w=360" width="50px" alt="">
+                                <div class="lead ml-3">
+                                    App Canyon
+                                </div>
+                            </div>
+                            <div class="px-4 btn my-2 py-1 bg-green-ex-light clr-green">
+                                Contract
+                            </div>
+                            <ul class="pop-list">
+                                <li>&nbsp; Bachelor's degree in design or related</li>
+                                <li>&nbsp; 6+ years of experience in UI design</li>
+                                <li>&nbsp; Proficiency in Figma.</li>
+                            </ul>
+                            <div class="d-flex align-items-center font-weight-bold my-2">
+                                <span class="material-symbols-outlined">pin_drop</span>
+                                <div class="text-dark">
+                                    Owerri West, Imo
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center font-15 mb-4 font-weight-bold my-1">
+                                <span class="mx-2">₦</span>
+                                <div class="text-dark">
+                                    200,000 - 300,000 per month
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mt-4 justify-content-around">
+                                <div class="py-1 rounded px-4 bg-green font-15-1 text-white font-archivo">
+                                    <a class="text-white" href="job-details/kLqqFxyZdALA.html" style="text-decoration:none">Apply This Job</a>
+                                </div>
+                                <!-- <div class="py-1 px-4 rounded border-green clr-green"><span class="material-symbols-outlined mt-1">bookmark</span></div> -->
+                            </div>
+                        </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="uiJobs-card sec-9-card shadow-md p-4 rounded">
+                            <div class="h5 font-archivo">VUE JS Developer Needed</div>
+                            <div class="d-flex my-3 align-items-center">
+                                <img src="https://graphicsfamily.com/wp-content/uploads/2020/12/Set-of-company-logo-design-ideas-scaled.jpg" width="50px" alt="">
+                                <div class="lead ml-3">
+                                    nHub Nigeria
+                                </div>
+                            </div>
+                            <div class="px-4 btn my-2 py-1 bg-green-ex-light clr-green">
+                                Full Time
+                            </div>
+                            <ul class="pop-list">
+                                <li>&nbsp; Bachelor's degree in design or related</li>
+                                <li>&nbsp; 2+ years of experience in UI design</li>
+                                <li>&nbsp; Proficiency in Figma.</li>
+                            </ul>
+                            <div class="d-flex align-items-center font-weight-bold my-2">
+                                <span class="material-symbols-outlined">pin_drop</span>
+                                <div class="text-dark">
+                                    Aboh, Imo
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center font-15 mb-4 font-weight-bold my-1">
+                                <span class="mx-2">₦</span>
+                                <div class="text-dark">
+                                    80,000 - 120,000 per month
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mt-4 justify-content-around">
+                                <div class="py-1 rounded px-4 bg-green font-15-1 text-white font-archivo">
+                                    <a class="text-white" href="job-details/kLqqFxyZdALA.html" style="text-decoration:none">Apply This Job</a>
+                                </div>
+                                <!-- <div class="py-1 px-4 rounded border-green clr-green"><span class="material-symbols-outlined mt-1">bookmark</span></div> -->
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div id="php" class="row mt-3 py-4">
+                <div class="col-lg-4">
+                    <div class="uiJobs-card sec-9-card shadow-md p-4 rounded">
+                            <div class="h5 font-archivo">WordPress Plugin Developer Needed</div>
+                            <div class="d-flex my-3 align-items-center">
+                                <img src="https://cdn.logojoy.com/wp-content/uploads/2018/05/01104823/1454.png" width="50px" alt="">
+                                <div class="lead ml-3">
+                                    Atalanta LLC.
+                                </div>
+                            </div>
+                            <div class="px-4 btn my-2 py-1 bg-green-ex-light clr-green">
+                                Part Time
+                            </div>
+                            <ul class="pop-list">
+                                <li>&nbsp; Bachelor's degree in design or related</li>
+                                <li>&nbsp; 5+ years of experience in UI design</li>
+                                <li>&nbsp; Proficiency in Figma.</li>
+                            </ul>
+                            <div class="d-flex align-items-center font-weight-bold my-2">
+                                <span class="material-symbols-outlined">pin_drop</span>
+                                <div class="text-dark">
+                                    Ngor Okpala, Imo
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center font-15 mb-4 font-weight-bold my-1">
+                                <span class="mx-2">₦</span>
+                                <div class="text-dark">
+                                    450,000 - 650,000 per month
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mt-4 justify-content-around">
+                                <div class="py-1 rounded px-4 bg-green font-15-1 text-white font-archivo">
+                                    <a class="text-white" href="job-details/kLqqFxyZdALA.html" style="text-decoration:none">Apply This Job</a>
+                                </div>
+                                <!-- <div class="py-1 px-4 rounded border-green clr-green"><span class="material-symbols-outlined mt-1">bookmark</span></div> -->
+                            </div>
+                        </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="uiJobs-card sec-9-card shadow-md p-4 rounded">
+                            <div class="h5 font-archivo">Symphony PHP Developer Nedded</div>
+                            <div class="d-flex my-3 align-items-center">
+                                <img src="uploads/profile-pictures/7/a.jpg" width="50px" alt="">
+                                <div class="lead ml-3">
+                                    OldHam PLC
+                                </div>
+                            </div>
+                            <div class="px-4 btn my-2 py-1 bg-green-ex-light clr-green">
+                                Contract
+                            </div>
+                            <ul class="pop-list">
+                                <li>&nbsp; Bachelor's degree in design or related</li>
+                                <li>&nbsp; 6+ years of experience in UI design</li>
+                                <li>&nbsp; Proficiency in Figma.</li>
+                            </ul>
+                            <div class="d-flex align-items-center font-weight-bold my-2">
+                                <span class="material-symbols-outlined">pin_drop</span>
+                                <div class="text-dark">
+                                    Owerri West, Imo
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center font-15 mb-4 font-weight-bold my-1">
+                                <span class="mx-2">₦</span>
+                                <div class="text-dark">
+                                    200,000 - 300,000 per month
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mt-4 justify-content-around">
+                                <div class="py-1 rounded px-4 bg-green font-15-1 text-white font-archivo">
+                                    <a class="text-white" href="job-details/kLqqFxyZdALA.html" style="text-decoration:none">Apply This Job</a>
+                                </div>
+                                <!-- <div class="py-1 px-4 rounded border-green clr-green"><span class="material-symbols-outlined mt-1">bookmark</span></div> -->
+                            </div>
+                        </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="uiJobs-card sec-9-card shadow-md p-4 rounded">
+                            <div class="h5 font-archivo">PHP Tutor Needed</div>
+                            <div class="d-flex my-3 align-items-center">
+                                <img src="https://www.designhill.com/resize_img.php?atyp=page_file&pth=ft_ca_ct||117||contestfile_7&flp=1554116646-12909290705ca1f02620ebf2-09367637.jpg" width="50px" alt="">
+                                <div class="lead ml-3">
+                                    nHub Nigeria
+                                </div>
+                            </div>
+                            <div class="px-4 btn my-2 py-1 bg-green-ex-light clr-green">
+                                Full Time
+                            </div>
+                            <ul class="pop-list">
+                                <li>&nbsp; Bachelor's degree in design or related</li>
+                                <li>&nbsp; 2+ years of experience in UI design</li>
+                                <li>&nbsp; Proficiency in Figma.</li>
+                            </ul>
+                            <div class="d-flex align-items-center font-weight-bold my-2">
+                                <span class="material-symbols-outlined">pin_drop</span>
+                                <div class="text-dark">
+                                    Aboh, Imo
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center font-15 mb-4 font-weight-bold my-1">
+                                <span class="mx-2">₦</span>
+                                <div class="text-dark">
+                                    80,000 - 120,000 per month
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mt-4 justify-content-around">
+                                <div class="py-1 rounded px-4 bg-green font-15-1 text-white font-archivo">
+                                    <a class="text-white" href="job-details/kLqqFxyZdALA.html" style="text-decoration:none">Apply This Job</a>
+                                </div>
+                                <!-- <div class="py-1 px-4 rounded border-green clr-green"><span class="material-symbols-outlined mt-1">bookmark</span></div> -->
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div id="mySql" class="row mt-3 py-4">
+                <div class="col-lg-4">
+                    <div class="uiJobs-card sec-9-card shadow-md p-4 rounded">
+                            <div class="h5 font-archivo">Mongo DB Developer Needed</div>
+                            <div class="d-flex my-3 align-items-center">
+                                <img src="uploads/profile-pictures/10/aaa.jpg" width="50px" alt="">
+                                <div class="lead ml-3">
+                                    Standard DB Ext
+                                </div>
+                            </div>
+                            <div class="px-4 btn my-2 py-1 bg-green-ex-light clr-green">
+                                Full Time
+                            </div>
+                            <ul class="pop-list">
+                                <li>&nbsp; Bachelor's degree in design or related</li>
+                                <li>&nbsp; 5+ years of experience in UI design</li>
+                                <li>&nbsp; Proficiency in Figma.</li>
+                            </ul>
+                            <div class="d-flex align-items-center font-weight-bold my-2">
+                                <span class="material-symbols-outlined">pin_drop</span>
+                                <div class="text-dark">
+                                    Ngor Okpala, Imo
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center font-15 mb-4 font-weight-bold my-1">
+                                <span class="mx-2">₦</span>
+                                <div class="text-dark">
+                                    450,000 - 650,000 per month
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mt-4 justify-content-around">
+                                <div class="py-1 rounded px-4 bg-green font-15-1 text-white font-archivo">
+                                    <a class="text-white" href="job-details/kLqqFxyZdALA.html" style="text-decoration:none">Apply This Job</a>
+                                </div>
+                                <!-- <div class="py-1 px-4 rounded border-green clr-green"><span class="material-symbols-outlined mt-1">bookmark</span></div> -->
+                            </div>
+                        </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="uiJobs-card sec-9-card shadow-md p-4 rounded">
+                            <div class="h5 font-archivo">FireBase OneSignal Expact Needed</div>
+                            <div class="d-flex my-3 align-items-center">
+                                <img src="uploads/profile-pictures/7/a.jpg" width="50px" alt="">
+                                <div class="lead ml-3">
+                                    App NOVA
+                                </div>
+                            </div>
+                            <div class="px-4 btn my-2 py-1 bg-green-ex-light clr-green">
+                                Full Time
+                            </div>
+                            <ul class="pop-list">
+                                <li>&nbsp; Bachelor's degree in design or related</li>
+                                <li>&nbsp; 6+ years of experience in UI design</li>
+                                <li>&nbsp; Proficiency in Figma.</li>
+                            </ul>
+                            <div class="d-flex align-items-center font-weight-bold my-2">
+                                <span class="material-symbols-outlined">pin_drop</span>
+                                <div class="text-dark">
+                                    Owerri West, Imo
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center font-15 mb-4 font-weight-bold my-1">
+                                <span class="mx-2">₦</span>
+                                <div class="text-dark">
+                                    200,000 - 300,000 per month
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mt-4 justify-content-around">
+                                <div class="py-1 rounded px-4 bg-green font-15-1 text-white font-archivo">
+                                    <a class="text-white" href="job-details/kLqqFxyZdALA.html" style="text-decoration:none">Apply This Job</a>
+                                </div>
+                                <!-- <div class="py-1 px-4 rounded border-green clr-green"><span class="material-symbols-outlined mt-1">bookmark</span></div> -->
+                            </div>
+                        </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="uiJobs-card sec-9-card shadow-md p-4 rounded">
+                            <div class="h5 font-archivo">Cardro Developer Needed</div>
+                            <div class="d-flex my-3 align-items-center">
+                                <img src="uploads/profile-pictures/1/1618099961707.jpg" width="50px" alt="">
+                                <div class="lead ml-3">
+                                    DB Base NG
+                                </div>
+                            </div>
+                            <div class="px-4 btn my-2 py-1 bg-green-ex-light clr-green">
+                                Full Time
+                            </div>
+                            <ul class="pop-list">
+                                <li>&nbsp; Bachelor's degree in design or related</li>
+                                <li>&nbsp; 2+ years of experience in UI design</li>
+                                <li>&nbsp; Proficiency in Figma.</li>
+                            </ul>
+                            <div class="d-flex align-items-center font-weight-bold my-2">
+                                <span class="material-symbols-outlined">pin_drop</span>
+                                <div class="text-dark">
+                                    Aboh, Imo
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center font-15 mb-4 font-weight-bold my-1">
+                                <span class="mx-2">₦</span>
+                                <div class="text-dark">
+                                    80,000 - 120,000 per month
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mt-4 justify-content-around">
+                                <div class="py-1 rounded px-4 bg-green font-15-1 text-white font-archivo">
+                                    <a class="text-white" href="job-details/kLqqFxyZdALA.html" style="text-decoration:none">Apply This Job</a>
+                                </div>
+                                <!-- <div class="py-1 px-4 rounded border-green clr-green"><span class="material-symbols-outlined mt-1">bookmark</span></div> -->
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="mt-4 text-center cursor-pointer h5">
+                <a href="search-jobs.html" style="text-decoration:none; color:#000;">
+                    View All Popular Jobs in
+                    <span class="ui-t">UI Designer</span>
+                    <span class="lara-t">Laravel Development</span>
+                    <span class="javaS-t">JavaScript Development</span>
+                    <span class="php-t">PHP Development</span>
+                    <span class="myS-t">SQL Development</span>
+                </a>
+                <hr class="p-0 w-25 m-0 m-auto border-1 ">
+            </div>
+        </div>
+    </div>
+<div class="section-8 mb-5" data-aos="fade-up">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="h1 font-weight-bold clr-dark-blue">Blog & News</div>
+                <div class="lead mb-5">Expert advice and career resources all in the ImoJobs Blog.</div>
+            </div>
+            <div class="col-lg-4">
+                <div class="mt-5 text-center cursor-pointer h5">
+
+                    <a href="route(%27front.post.html" style="color:#000">
+                        View All Articles
+                    </a>
+                    <hr class="p-0 w-25 m-0 m-auto border-1 ">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="news-box">
+                    <img src="front_web/images/blog-1.png"
+                         class="w-100 news-b" alt="Blog Image">
+                    <div class="btn py-1 px-4 font-weight-bold rounded my-4 bg-green-ex-light clr-green font-open-sans">Tips</div>
+                    <div class="h5 font-weight-bold font-open-sans">
+                        Benefits of Having Experience While Applying For a Job
+                    </div>
+                    <div class=" text-justify font-poppins font-14 font-weight-light">
+                        Alice was a dispute going on rather better now,' she added aloud. 'Do you take me for asking! No, it'll never do to ask: perhaps I shall be late!' (wh...
+                    </div>
+                    <div class="btn my-3 blog-btn d-flex align-items-center justify-content-between font-weight-bold">Read More <span class="material-symbols-outlined ml-2">arrow_forward</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="news-box">
+                    <img src="front_web/images/blog-1.png"
+                         class="w-100 news-b" alt="Blog Image">
+                    <div class="btn py-1 px-4 font-weight-bold rounded my-4 bg-green-ex-light clr-green font-open-sans">Tips</div>
+                    <div class="h5 font-weight-bold font-open-sans">
+                        Types of Candidates
+                    </div>
+                    <div class=" text-justify font-poppins font-14 font-weight-light">
+                        For this must ever be A secret, kept from all the party sat silent for a minute or two the Caterpillar contemptuously. 'Who are YOU?' said the Mock Tu...
+                    </div>
+                    <div class="btn my-3 blog-btn d-flex align-items-center justify-content-between font-weight-bold">Read More <span class="material-symbols-outlined ml-2">arrow_forward</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="news-box">
+                    <img src="front_web/images/blog-1.png"
+                         class="w-100 news-b" alt="Blog Image">
+                    <div class="btn py-1 px-4 font-weight-bold rounded my-4 bg-green-ex-light clr-green font-open-sans">Tips</div>
+                    <div class="h5 font-weight-bold font-open-sans">
+                        Learn About Information Technology
+                    </div>
+                    <div class=" text-justify font-poppins font-14 font-weight-light">
+                        Footman remarked, 'till tomorrow--' At this moment Five, who had spoken first. 'That's none of my own. I'm a hatter.' Here the Dormouse into the wood...
+                    </div>
+                    <div class="btn my-3 blog-btn d-flex align-items-center justify-content-between font-weight-bold">Read More <span class="material-symbols-outlined ml-2">arrow_forward</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section-10 partners bg-white">
+    <div class="container">
+        <div class="h1 mt-4 mb-5 font-weight-bold">
+            Our Partners
+        </div>
+    </div>
+    <div class="owl-carousel owl-theme bg-white">
+        <div class="item my-3 mx-5">
+            <h4>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/1280px-Microsoft_logo_%282012%29.svg.png" alt="">
+            </h4>
+        </div>
+        <div class="item my-3 mx-5">
+            <h4>
+                <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c51f.png" alt="">
+            </h4>
+        </div>
+        <div class="item my-3 mx-5">
+            <h4>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Yahoo%21_%282019%29.svg/2560px-Yahoo%21_%282019%29.svg.png" alt="">
+            </h4>
+        </div>
+        <div class="item my-3 mx-5">
+            <h4>
+                <img src="https://www.nicepng.com/png/detail/60-606324_aliexpress-logo-express-ali.png" alt="">
+            </h4>
+        </div>
+        <div class="item my-3 mx-5">
+            <h4>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/1280px-Microsoft_logo_%282012%29.svg.png" alt="">
+            </h4>
+        </div>
+        <div class="item my-3 mx-5">
+            <h4>
+                <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c51f.png" alt="">
+            </h4>
+        </div>
+        <div class="item my-3 mx-5">
+            <h4>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Yahoo%21_%282019%29.svg/2560px-Yahoo%21_%282019%29.svg.png" alt="">
+            </h4>
+        </div>
+        <div class="item my-3 mx-5">
+            <h4>
+                <img src="https://www.nicepng.com/png/detail/60-606324_aliexpress-logo-express-ali.png" alt="">
+            </h4>
+        </div>
+    </div>
+</div>
+<div class="footer py-5 font-archivo" >
+    <div class="container">
+        <div class="py-5">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="h2">Stay Updated</div>
+                    <div class="lead my-2">Stay up-to-date with the latest job listings and career tips from our newsletter.</div>
+                    <div class="d-flex align-items-center mt-4 border-fot rounded">
+                        <div class="jumbo-form bg-white rounded">
+                            <form>
+                                <div class="inner-form d-flex justify-content-between">
+                                    <div class="left d-flex">
+                                        <div class="input-wrap first">
+                                            <div class="input-field first">
+                                                <input type="text" placeholder="&#xf0e0 Enter Email Address" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btn-wrapper d-flex align-items-center">
+                                        <button class="btn-search btn-success mr-2" type="button">Subscribe</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <img src="front_web/home/img/logo.png" alt="" class="mt-5">
+                    <div class="icon pt-3 clr-dark-blue">
+                        <i class="icon-fot px-2 font-16 fab fa-facebook"></i>
+                        <i class="icon-fot px-2 font-16 fab fa-youtube"></i>
+                        <i class="icon-fot px-2 font-16 fab fa-twitter"></i>
+                        <i class="icon-fot px-2 font-16 fab fa-linkedin-in"></i>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="list-wrp ml-5">
+                        <h2>Jobs</h2>
+                        <ul class="fot m-0 p-0 cursor-pointer">
+                            <li>IT Development</li>
+                            <li>Finance</li>
+                            <li>Healthcare</li>
+                            <li>Sales & Marketing</li>
+                            <li>Education</li>
+                            <li>Design</li>
+                            <li>Research</li>
+                            <li>Human Resources</li>
+                            <li>Freelance</li>
+                            <li>Jobs For You</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="list-wrp ml-5">
+                        <h2>About</h2>
+                        <ul class="fot m-0 p-0 cursor-pointer">
+                            <li>About Us</li>
+                            <li>History</li>
+                            <li>Our Team</li>
+                            <li>Testimonials</li>
+                        </ul>
+                        <h2 class="mt-5">Blog</h2>
+                        <ul class="fot m-0 p-0 cursor-pointer">
+                            <li>News</li>
+                            <li>Tips</li>
+                            <li>Events</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="list-wrp ml-5">
+                        <h2>Services</h2>
+                        <ul class="fot m-0 p-0 cursor-pointer">
+                            <li>For Employee</li>
+                            <li>For Employer</li>
+                            <li>Support</li>
+                        </ul>
+                        <h2 class="mt-5">Contact</h2>
+                        <ul class="fot m-0 p-0 cursor-pointer">
+                            <li>Phone</li>
+                            <li>Email</li>
+                            <li>Social Media</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container" style="margin-bottom:30px;">
+        <div class="row justify-content-between">
+            <div class="col-6 ">
+                <div class="lead cursor-pointer">
+                    Copyright © 2023 ImoJobs. All rights reserved.
+                </div>
+            </div>
+            <div class="col-6 d-flex justify-content-end">
+                <div class="lead">
+                    Privacy Policy. Terms & Condition.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.3/owl.carousel.min.js"></script>
+<script src="front_web/home/js/extention/choices.js"></script>
+<script src="front_web/home/js/main.js"></script>
+<script>
+    // FAQ Start
+    $(document).ready(function(){
+        $(".acd-1-output").hide();
+        $(".acd-2-output").hide();
+        $(".acd-3-output").hide();
+        $(".acd-4-output").hide();
+    });
+    $(".accdi-wrp").click(function(){
+        $(".acd-1-output").toggle(100)
+    });
+    $(".accdi-wrp-2").click(function(){
+        $(".acd-2-output").toggle(100)
+    });
+    $(".accdi-wrp-3").click(function(){
+        $(".acd-3-output").toggle(100)
+    });
+    $(".accdi-wrp-4").click(function(){
+        $(".acd-4-output").toggle(100)
+    });
+
+    function rotateAcd1(){
+        var angle = ($('#acd-rotate').data('angle') + 45) || 45;
+        $('#acd-rotate').css({'transform': 'rotate(' + angle + 'deg)'});
+        $('#acd-rotate').data('angle', angle);
+    }
+    function rotateAcd2(){
+        var angle = ($('#acd-rotate2').data('angle') + 45) || 45;
+        $('#acd-rotate2').css({'transform': 'rotate(' + angle + 'deg)'});
+        $('#acd-rotate2').data('angle', angle);
+    }
+    function rotateAcd3(){
+        var angle = ($('#acd-rotate3').data('angle') + 45) || 45;
+        $('#acd-rotate3').css({'transform': 'rotate(' + angle + 'deg)'});
+        $('#acd-rotate3').data('angle', angle);
+    }
+    function rotateAcd4(){
+        var angle = ($('#acd-rotate-4').data('angle') + 45) || 45;
+        $('#acd-rotate-4').css({'transform': 'rotate(' + angle + 'deg)'});
+        $('#acd-rotate-4').data('angle', angle);
+    }
+    // End FAQ
+
+    // start most popular jobs
+
+        /*dropdown-1 Menu*/
+        $('.dropdown-1').click(function () {
+        $(this).attr('tabindex', 1).focus();
+        $(this).toggleClass('active');
+        $(this).find('.dropdown-1-menu').slideToggle(300);
+    });
+        $('.dropdown-1').focusout(function () {
+        $(this).removeClass('active');
+        $(this).find('.dropdown-1-menu').slideUp(300);
+    });
+        $('.dropdown-1 .dropdown-1-menu li').click(function () {
+        $(this).parents('.dropdown-1').find('span').text($(this).text());
+        $(this).parents('.dropdown-1').find('input').attr('value', $(this).attr('id'));
+    });
+        /*End dropdown-1 Menu*/
+
+        $('.dropdown-1-menu li').click(function () {
+        var input = '<strong>' + $(this).parents('.dropdown-1').find('input').val() + '</strong>',
+        msg = '<span class="msg">Hidden input value: ';
+        $('.msg').html(msg + input + '</span>');
+    });
+
+        $(document).ready(function() {
+        $("#most-pop-1").click(function () {
+            $("#most-pop-data").replaceWith($most1);
+        });
+    });
+        $(document).ready(function() {
+        $("#most-pop-2").click(function () {
+            $("#most-pop-data").replaceWith($most2);
+        });
+    });
+        $(document).ready(function() {
+        $("#most-pop-3").click(function () {
+            $("#most-pop-data").replaceWith($most3);
+        });
+    });
+        $(document).ready(function() {
+        $("#most-pop-4").click(function () {
+            $("#most-pop-data").replaceWith($most4);
+        });
+    });
+        $(document).ready(function(){
+        $("#most-pop-5").click(function(){
+            $("#most-pop-data").replaceWith($most5);
+        });
+    });
+
+        var $most1 = $('<div id="most-pop-data">Laravel</div>');
+        var $most2 = $('<div id="most-pop-data">Javascript</div>');
+        var $most3 = $('<div id="most-pop-data">PHP</div>');
+        var $most4 = $('<div id="most-pop-data">SQL</div>');
+        var $most5 = $('<div id="most-pop-data">UI Designer</div>');
+
+        $(document).ready(function() {
+        $("#laravel, .lara-t").hide();
+        $("#javascript, .javaS-t").hide();
+        $("#php, .php-t").hide();
+        $("#mySql, .myS-t").hide();
+    });
+        $(".lara-trig").click(function(){
+        $("#laravel, .lara-t").show(100)
+        $("#javascript, .javaS-t").hide();
+        $("#php, .php-t").hide();
+        $("#mySql, .myS-t").hide();
+        $("#ui-designer, .ui-t").hide();
+    });
+        $(".uiD-trig").click(function(){
+        $("#laravel, .lara-t").hide()
+        $("#javascript, .javaS-t").hide();
+        $("#php, .php-t").hide();
+        $("#mySql, .myS-t").hide();
+        $("#ui-designer, .ui-t").show(100);
+    });
+        $(".javas-trig").click(function(){
+        $("#laravel, .lara-t").hide()
+        $("#javascript, .javaS-t").show(100);
+        $("#php, .php-t").hide();
+        $("#mySql, .myS-t").hide();
+        $("#ui-designer, .ui-t").hide();
+    });
+        $(".php-trig").click(function(){
+        $("#laravel, .lara-t").hide()
+        $("#javascript, .javaS-t").hide();
+        $("#php, .php-t").show(100);
+        $("#mySql, .myS-t").hide();
+        $("#ui-designer, .ui-t").hide();
+    });
+        $(".myS-trig").click(function(){
+        $("#laravel, .lara-t").hide()
+        $("#javascript, .javaS-t").hide();
+        $("#php, .php-t").hide();
+        $("#mySql, .myS-t").show(100);
+        $("#ui-designer, .ui-t").hide();
+    });
+
+    // End most popular jobs
+
+    // Start Featuered Jobs
+
+    $(document).ready(function() {
+        $('#feat2').hide();
+        $('#feat3').hide();
+        $('#feat4').hide();
+        $('#feat5').hide();
+    });
+    $("#feat-btn1").click(function(){
+        $('#feat1').show(100);
+        $('#feat2').hide();
+        $('#feat3').hide();
+        $('#feat4').hide();
+        $('#feat5').hide();
+        $('#feat-btn1').addClass('bg-green-ex-light px-3 py-2 clr-green');
+        $('#feat-btn2').removeClass('bg-green-ex-light px-3 py-2 clr-green');
+        $('#feat-btn3').removeClass('bg-green-ex-light px-3 py-2 clr-green');
+        $('#feat-btn4').removeClass('bg-green-ex-light px-3 py-2 clr-green');
+        $('#feat-btn5').removeClass('bg-green-ex-light px-3 py-2 clr-green');
+    });
+    $("#feat-btn2").click(function(){
+        $('#feat-btn1').removeClass('bg-green-ex-light px-3 py-2 clr-green');
+        $('#feat-btn2').addClass('bg-green-ex-light px-3 py-2 clr-green')
+        $('#feat-btn3').removeClass('bg-green-ex-light px-3 py-2 clr-green')
+        $('#feat-btn4').removeClass('bg-green-ex-light px-3 py-2 clr-green')
+        $('#feat-btn5').removeClass('bg-green-ex-light px-3 py-2 clr-green')
+        $('#feat1').hide();
+        $('#feat2').show(100);
+        $('#feat3').hide();
+        $('#feat4').hide();
+        $('#feat5').hide();
+    });
+    $("#feat-btn3").click(function(){
+        $('#feat-btn1').removeClass('bg-green-ex-light px-3 py-2 clr-green');
+        $('#feat-btn2').removeClass('bg-green-ex-light px-3 py-2 clr-green')
+        $('#feat-btn3').addClass('bg-green-ex-light px-3 py-2 clr-green')
+        $('#feat-btn4').removeClass('bg-green-ex-light px-3 py-2 clr-green')
+        $('#feat-btn5').removeClass('bg-green-ex-light px-3 py-2 clr-green')
+        $('#feat1').hide();
+        $('#feat2').hide();
+        $('#feat3').show(100);
+        $('#feat4').hide();
+        $('#feat5').hide();
+    });
+    $("#feat-btn4").click(function(){
+        $('#feat-btn1').removeClass('bg-green-ex-light px-3 py-2 clr-green');
+        $('#feat-btn2').removeClass('bg-green-ex-light px-3 py-2 clr-green')
+        $('#feat-btn3').removeClass('bg-green-ex-light px-3 py-2 clr-green')
+        $('#feat-btn4').addClass('bg-green-ex-light px-3 py-2 clr-green')
+        $('#feat-btn5').removeClass('bg-green-ex-light px-3 py-2 clr-green')
+        $('#feat1').hide();
+        $('#feat2').hide();
+        $('#feat3').hide();
+        $('#feat4').show(100);
+        $('#feat5').hide();
+    });
+    $("#feat-btn5").click(function(){
+        $('#feat-btn1').removeClass('bg-green-ex-light px-3 py-2 clr-green');
+        $('#feat-btn2').removeClass('bg-green-ex-light px-3 py-2 clr-green')
+        $('#feat-btn3').removeClass('bg-green-ex-light px-3 py-2 clr-green')
+        $('#feat-btn4').removeClass('bg-green-ex-light px-3 py-2 clr-green')
+        $('#feat-btn5').addClass('bg-green-ex-light px-3 py-2 clr-green')
+        $('#feat1').hide();
+        $('#feat2').hide();
+        $('#feat3').hide();
+        $('#feat4').hide();
+        $('#feat5').show(100);
+    });
+
+    // End Featured Jobs
+
+    // Start our Partner
+
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        nav:true,
+        autoplay:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    })
+
+    // End Our Partner
+</script>
+<script src="https://unpkg.com/aos%403.0.0-beta.6/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>
