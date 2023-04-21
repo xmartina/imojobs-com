@@ -839,9 +839,10 @@ ul.fot li{
     border:1px solid #075017;
 }
 .section-7-new{
-    background: rgb(13,240,31);
-    background: linear-gradient(264deg, rgba(13,240,31,0.10968137254901966) 31%, rgba(9,193,24,0.14049369747899154) 86%);
+    background-image: url('../img/jumbo-bg.png');
+    background-attachment: fixed;
     margin-top:110px;
+    height: 410px;
 }
 .hover-light:hover{
     border: 1px solid #28a745;
@@ -978,16 +979,84 @@ html .dropdown-1 ul.dropdown-1-menu li {
     color: #0a66c2;
     width: 140px;
 }
+.top-0{
+
+}
+.top-0-cus{
+    top: 0;
+    left: 0;
+    background-color: #010217;
+    opacity: .9;
+}
 /*Footer Ends Here*/
+/*Start BreadCrumb*/
+
+.breadcrumb-section{
+    height: 300px;
+    background-image: url('../img/jumbo-bg.png');
+}
+.icon-reg{
+    font-size: 70px;
+    border:4px solid #fff;
+}
+.job-details{
+    width: 78px;
+    height: 78px;
+    object-fit: contain;
+    background-color: #fcfcfc;
+}
+html .border-reg{
+    border: 2px solid #0a66c2!important;
+    border-radius: 100px!important;
+}
+html .border-reg:hover{
+    border: none;
+    background-color: #0a66c2!important;
+    transition: all 350ms linear;
+    transform: scale(1.1 , 1.1);
+}
+html .bg-reg{
+    background-color: #0a66c2!important;
+    border-radius: 100px!important;
+}
+html .bg-reg:hover{
+    background:transparent!important;
+    border: 2px solid #0a66c2!important;
+    transition: all 250ms linear;
+    transform: scale(1.1 , 1.1);
+}
+.text-1{
+    font-size: 10px;
+}
+.text-2{
+    font-size: 12px;
+}
+html .jb-breadC{
+    font-weight: 400!important;
+    line-height: 3;
+}
+.jb-con{
+    margin-left: 14px!important;
+}
+.jb-icon{
+    margin-right: 4px!important;
+}
+/*End BreadCrumb*/
 @media screen and (max-width: 767px) {
     .mt-md-45{
         margin-top: 175px !important;
+    }
+    .icon-reg{
+        font-size: 40px;
     }
     .border-sec-3{
         height: auto;
     }
     .jumbotron{
         height: 800px;
+    }
+    .breadcrumb-section{
+        padding-bottom: 90px!important;
     }
     .jumbo-form form .inner-form {
         display: flex;
@@ -1033,6 +1102,10 @@ html .dropdown-1 ul.dropdown-1-menu li {
     .btn-sec-7{
         width: 80%!important;
         padding: 2px;
+    }
+    .job-details{
+        min-width: 36px;
+        min-height: 36px;
     }
 }
 /*End Jumbotron Search Form*/
